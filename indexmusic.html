@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Blog de música</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://use.fontawesome.com/df21bfda9c.js"></script>
+		<style type="text/css">
+
+			.flex-parent{
+			  display: -ms-flex;
+			  display: -webkit-flex;
+			  display: flex;
+			  align-items: flex-end;
+			}
+			
+			.flex-child{
+			  display: -ms-flex;
+			  display: -webkit-flex;
+			  display: flex;
+			  justify-content: flex-end;
+			  flex-direction: row;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="row flex-parent">
+					<div class="col-sm-6">
+						<img class="img-responsive" src="musiclogo.svg" alt="logo" height="100px">					
+					</div>
+					<div class="col-sm-6 flex-child">
+						<a href="#">
+							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+						</a> 
+						<a href="#">
+							<i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+						</a> 
+						<a href="#">
+							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+						</a> 
+						<a href="#">
+							<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>	
+						</a>
+					</div>					
+				</div>
+			</div>
+			<nav class="navbar">
+				<div class="container">
+					<ul class="nav nav-pills nav-justified">
+					  <li class="nav-item">
+					    <a class="" href="#">Inicio</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="" href="#">Bandas</a>
+					  </li>
+					  <li class="nav-item" background-color=red>
+					    <a class="" href="#">Solistas</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="" href="#">Compositores</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="" href="#">Soundtracks</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="" href="#">Top 10</a>
+					  </li>				  
+					</ul>
+				</div>
+			</nav>
+		</header>		
+		<br/>				
+		<div class="container">
+			<div class="row">			
+				<section class="col-sm-8">					
+					<article>
+						<h3>John Mayer</h3>
+						<div class="row">							
+							<div class="col-sm-8">
+								<p>Born in Bridgeport, Connecticut, and raised in the nearby town of Fairfield, Mayer began playing blues as a teenager. By 1997, his skill on the electric guitar was enough to warrant admission into the Berklee College of Music, although Mayer dropped out after two semesters to pursue a songwriting career in Atlanta. Working alongside former classmate Clay Cook, he frequented the local coffeehouse circuit and began co-writing material that melded palatable pop/rock with unexpected flourishes. Cook and Mayer parted ways shortly thereafter, however, with Cook joining the Marshall Tucker Band's touring lineup for several years. Now a solo artist by default, Mayer recorded several of the duo's songs, packaged them alongside a handful of his own compositions, and self-released the EP in 1999 under the title Inside Wants Out.</p>
+							</div>
+							<div class="col-sm-4">
+								<img src="johnmayer.jpg" width="90%" align="center">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="comentarios">Comentarios:</label>
+							<textarea class="form-control" rows="3" id="comment"></textarea>
+							<input type="submit" class="btn btn-info" value="Enviar comentario" /> 
+						</div>
+					</article>
+					<hr/>	
+					<article>
+						<h3>The Script</h3>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="script.jpg" width="90%" align="center">
+							</div>							
+							<div class="col-sm-8">
+								<p>The Script are one of the world’s most successful bands, with over 30 million records sold and multiple sell out world tours under their belt. The Irish three-piece have scored multi-platinum success across all five of their albums, four of which reached #1 on the Official UK Album charts, including their most recent Freedom Child, released in July 2017.</p>
+							</div>							
+						</div>
+						<div class="form-group">
+							<label for="comentarios">Comentarios:</label>
+							<textarea class="form-control" rows="3" id="comment"></textarea>
+							<input type="submit" class="btn btn-info" value="Enviar comentario" /> 
+						</div>
+					</article>
+					<hr/>
+				</section>
+				<aside class="col-sm-4">
+					<div class="input-group">
+				      <input type="text" class="form-control" placeholder="Buscar...">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"></button>
+				      </span>
+				    </div>
+				    <ul class="list-group">
+					  <li class="list-group-item">John Mayer.</li>
+					  <li class="list-group-item">The Script.</li>
+					  <li class="list-group-item">The Fray.</li>
+					  <li class="list-group-item">James Blunt.</li>
+					  <li class="list-group-item">KEANE.</li>
+					</ul>			
+				</aside>
+			</div>
+		</div>		
+	</body>
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</html>
